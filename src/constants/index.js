@@ -1,6 +1,5 @@
 import {
     reactjs,
-    nodejs,
     mongodb,
     git,
     docker,
@@ -13,9 +12,14 @@ import {
     postgres,
     jira,
     mem,
+    tesla,
     fueldetection,
     sjsu,
     mlrit,
+    javascript,
+    starbucks,
+    meta,
+    shopify,
   } from "../assets";
   export const navLinks = [
     {
@@ -42,15 +46,15 @@ import {
 
   const services = [
     {
-      title: "ML Engineer",
+      title: "AI & ML Engineer",
       icon: aws,
     },
     {
-      title: "Data Science Developer",
+      title: "Data Science Engineer",
       icon: devops,
     },
     {
-      title: "Java Backend Developer",
+      title: "Java Backend Engineer",
       icon: java,
     },
     {
@@ -60,24 +64,24 @@ import {
   ];
   const technologies = [
     {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "aws",
+      name: "Aws",
       icon: aws,
     },
     {
-      name: "java",
+      name: "Java",
       icon: java,
+    },
+    {
+      name: "Javascript",
+      icon: javascript,
+    },
+    {
+      name: "Git",
+      icon: git,
+    },
+    {
+      name: "devops",
+      icon: reactjs,
     },
     {
       name: "python",
@@ -96,7 +100,7 @@ import {
       icon: postgres,
     },
     {
-      name: "docker",
+      name: "devops",
       icon: docker,
     },
     {
@@ -155,14 +159,14 @@ import {
       degree: "Master’s in Data Science and Artificial Intelligence",
       schoolName: "University of Central Missouri, Missouri",
       yearDuration: "2025 - 2027",
-      coursework: "Data Science, Algorithms, Topics In AI, Machine Learning",
+      coursework: "Data Science, Algorithms, Topics In AI, Machine Learning, SQL",
       logo: sjsu,
     },
     {
       degree: "Bachelor of Computer Science in AI & ML",
       schoolName: "Kalasalingam Univeristy, India",
       yearDuration: "2020 - 2024",
-      coursework: "DSA, Java, Data Science, AI&ML, Python, OS, DBT, CN, NLP, Deep Learning",
+      coursework: "DSA, Java, Ds, AI&ML, Python, OS, DBT, CN, NLP, DL, DAA, Excel",
       logo: mlrit,
     },
   ];
@@ -195,7 +199,7 @@ import {
   ];
   const projects = [
     {
-      name: "Spam or Ham",
+      name: "Email Spam or Ham",
       description:
         "Email Spam Classification Using Machine Learning. spam detection employs rule-based filters, Bayesian filtering, and machine learning to sift through incoming emails, safeguarding users from unwanted messages. This enhances email security and ensures users receive only relevant and secure messages, promoting productivity.",
       tags: [
@@ -226,7 +230,7 @@ import {
     {
       name: "Advanced Billing System",
       description:
-        "AI-Driven Billing Assistant Using Mobile Vision & Web Development. The project aims to enable customers to create their bills using their mobile phones. By scanning QR codes, users can access self billing functionality. Additionally, they can capture bill images with their mobile cameras for secure billing transactions. This process enhances convenience and ensures accuracy in transactions.",
+        "AI-Driven Billing Assistant Using Mobile Vision & Web Development. The project aims to enable customers create their bills using their mobile phones. By scanning QR codes, users access self billing functionality. Additionally, they can capture bill images with their mobile cameras for secure billing transactions. This process enhances convenience & ensures accuracy in transactions.",
       tags: [
         {
           name: "Python",
@@ -245,88 +249,88 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: mem,
+      image: tesla,
       source_code_link: "https://github.com/vamsikrishna2127/Advanced_Billing_System_Using_Mobile_Camera_in_Python_Django",
     },
     {
-      name: "Memories",
+      name: "Stock Price Prediction",
       description:
-        "Full Stack MERN Web Application. It is a simple social media app that allows users to post interesting events that happened in their lives.",
+        "This project focuses on predicting stock market closing prices using machine learning techniques. By analyzing historical stock data, it addresses the inherent volatility and non-linear behavior of financial markets, aiming to deliver accurate and reliable return forecasts. The model leverages Python libraries and ML algorithms to improve prediction performance.",
       tags: [
         {
           name: "mongodb",
           color: "green-text-gradient",
         },
         {
-          name: "express",
+          name: "python",
           color: "yellow-text-gradient",
         },
         {
-          name: "react",
+          name: "data science",
           color: "blue-text-gradient",
         },
         {
-          name: "NodeJS",
+          name: "Jupyter",
           color: "pink-text-gradient",
         },
       ],
-      image: mem,
-      source_code_link: "https://github.com/rajpranay06/Memories.git",
+      image: starbucks,
+      source_code_link: "https://github.com/vamsikrishna2127/Stocks-Close-Price-Prediction",
     },
     {
-      name: "Memories",
+      name: "Employee Time Sheet and Attendance Management System",
       description:
-        "Full Stack MERN Web Application. It is a simple social media app that allows users to post interesting events that happened in their lives.",
+        "It is an application-based solution designed to streamline workforce management by integrating two applications: one for employers to manage employee data, attendance records, work schedules, timesheets, and payroll-related details, and another for administrators to allocate work, authorize or reject leave requests, monitor attendance, and generate reports. This system eliminates manual paperwork, enhances accuracy and improves communication between employers and administrators, accountability, and employee satisfaction within the organization.",
       tags: [
         {
-          name: "mongodb",
+          name: "Java",
           color: "green-text-gradient",
         },
         {
-          name: "express",
+          name: "Sql",
           color: "yellow-text-gradient",
         },
         {
-          name: "react",
+          name: "Excel",
           color: "blue-text-gradient",
         },
         {
-          name: "NodeJS",
+          name: "DSA",
           color: "pink-text-gradient",
         },
       ],
-      image: mem,
-      source_code_link: "https://github.com/rajpranay06/Memories.git",
+      image: fueldetection,
+      source_code_link: "https://https://github.com/vamsikrishna2127/Employee-Time-Sheet-And-Attendance-Mangement-System-Using-Java.com/rajpranay06/Memories.git",
     },
     {
-      name: "Memories",
+      name: "AOM Kafka Resubmission System Using TIBCO",
       description:
-        "Full Stack MERN Web Application. It is a simple social media app that allows users to post interesting events that happened in their lives.",
-      tags: [
+        "AOM Kafka Resubmission. Developed an AOM Kafka Resubmission System using TIBCO BW to enhance message reliability and processing efficiency. The system ensures seamless resubmission of failed Kafka messages, reducing data loss and improving realtime processing. Includes automated monitoring, logging, and error-handling mechanisms, allowing efficient recovery of unprocessed messages. This solution optimizes workflow management and ensures high availability in enterprisemessaging systems.",
+      tags: [ 
         {
-          name: "mongodb",
+          name: "tibco",
           color: "green-text-gradient",
         },
         {
-          name: "express",
+          name: "kafka",
           color: "yellow-text-gradient",
         },
         {
-          name: "react",
+          name: "hawk",
           color: "blue-text-gradient",
         },
         {
-          name: "NodeJS",
+          name: "linux",
           color: "pink-text-gradient",
         },
       ],
-      image: mem,
-      source_code_link: "https://github.com/rajpranay06/Memories.git",
+      image: shopify,
+      source_code_link: "https://github.com/vamsikrishna2127",
     },
     {
-      name: "Fuel Efficiency Prediction",
+      name: "Titanic Survival Prediction",
       description:
-        "Developed an ML model to predict fuel efficiency of cars based on necessary attributes using Multi layer perceptron and Artificial Neural Networks. The learning method involved is feed-forward learning. ",
+        "Titanic survival prediction using logistic regression is a classic machine learning problem where the objective is to predict whether a passenger survived the disaster based on factors such as age, gender, passenger class, fare, and family size. It is widely used as an introductory project in data science because it demonstrates key steps like data preprocessing, feature engineering, handling missing values, model training, and evaluation, while also highlighting how social and demographic variables influenced survival outcomes.",
         tags: [
         {
           name: "Python",
@@ -337,12 +341,16 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "Flask",
+          name: "ML",
           color: "pink-text-gradient",
         },
+        {
+          name: "AI",
+          color: "blue-text-gradient",
+        },
       ],
-      image: fueldetection,
-      source_code_link: "https://github.com/rajpranay06/Fuel-Efficiency-Prediction-.git",
+      image :meta,
+      source_code_link: "https://github.com/vamsikrishna2127/Titanic_Survival_Prediction_Using_Logistic_Regression",
     },
   ];
   export { services, technologies, experiences, testimonials, projects, education };

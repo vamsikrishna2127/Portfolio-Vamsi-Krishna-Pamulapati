@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -11,16 +11,20 @@ const Contact = () => {
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
 
+  // ✅ Initialize EmailJS with your Public Key
+  useEffect(() => {
+    emailjs.init("JKm9Mg8hoyKcq_1zx"); // Your EmailJS Public Key
+  }, []);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
     emailjs
       .sendForm(
-        "service_mcq5bww",       // Your EmailJS Service ID
-        "template_8j1btrc",      // Your EmailJS Template ID
-        formRef.current,         // Form reference
-        "R2vwc1phsxNQV-WYY"      // Your EmailJS Public Key
+        "service_vkv3u6t",   // ✅ Your Service ID
+        "template_4rg13vb",  // ✅ Your Template ID
+        formRef.current
       )
       .then(
         () => {
@@ -55,7 +59,7 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Your Name</span>
             <input
               type="text"
-              name="from_name" // ✅ Matches EmailJS template
+              name="from_name"   // ✅ Must match EmailJS template variable
               placeholder="Your Name"
               required
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
@@ -66,7 +70,7 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Your Email</span>
             <input
               type="email"
-              name="reply_to" // ✅ Matches EmailJS template
+              name="reply_to"   // ✅ Must match EmailJS template variable
               placeholder="Your Email"
               required
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
@@ -77,7 +81,7 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
               rows="7"
-              name="message" // ✅ Matches EmailJS template
+              name="message"    // ✅ Must match EmailJS template variable
               placeholder="Your Message"
               required
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
